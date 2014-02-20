@@ -2,7 +2,9 @@
 'use strict';
 
 angular.module('AppD')
-        .controller('WelcomeController', function($rootScope, $scope, $http, $routeParams, $location, $cookies, $route, $window) {
-
+        .controller('WelcomeController', function(TestService) {
+            TestService.getAllBlog(function() {
+                alert("Hiiiiiii");
+            });
         });
 
