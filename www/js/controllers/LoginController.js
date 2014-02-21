@@ -1,6 +1,9 @@
 'use strict';
 
-angular.module('AppD')
-        .controller('LoginController', function($rootScope, $scope, $http, $routeParams, $location, $cookies, $route, $window) {
+angular.module('AppD').controller('LoginController', function($scope,$http,LoginService) {
+    $scope.user = {};
+    $scope.submitLogin = function() {
+        LoginService.doLogin($scope.user);
+    };
 
-        });
+});

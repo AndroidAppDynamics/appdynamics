@@ -1,1 +1,41 @@
-Login
+<div class="container">
+    <form name="loginForm" ng-submit="submitLogin()" class="form-group loginForm">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" value="" placeholder="User Name" ng-model="user.name">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" value="" placeholder="Customer Name" ng-model="user.customer">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-8">
+
+                    <input type="text" class="form-control" value="" placeholder="Profile" ng-model="user.profile">
+
+                </div>
+                <div class="col-xs-4">
+                    .appdynamics.com
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" value="" placeholder="Password" ng-model="user.password">
+                </div></div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-12">
+                    <input type="submit" class="form-control btn btn-primary"></div></div>
+        </div>
+    </form>
+</div>

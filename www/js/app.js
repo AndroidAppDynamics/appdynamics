@@ -6,7 +6,9 @@ angular.module('AppD', [
     'ngSanitize',
     'ngRoute',
     'ngAnimate',
-    'PhoneGap'
+    'PhoneGap',
+    'LocalStorageModule'
+    
 ])
         .config(function($routeProvider) {
             $routeProvider
@@ -18,10 +20,10 @@ angular.module('AppD', [
                         controller: 'ProfileController'})
                     .when('/details', {
                         templateUrl: 'partials/detailsScreen.html',
-                        controller: 'ProfileController'})
+                        controller: 'DetailsController'})
                     .when('/login', {
                         templateUrl: 'partials/loginScreen.html',
-                        controller: 'ProfileController'})
+                        controller: 'LoginController'})
                     .otherwise({
                         redirectTo: '/'
                     });

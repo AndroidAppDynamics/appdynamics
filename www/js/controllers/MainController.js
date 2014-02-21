@@ -2,8 +2,7 @@
 'use strict';
 
 angular.module('AppD')
-        .controller('MainController', function($rootScope, $scope,
-                $http, $routeParams, $location, $cookies, $route, $window, PhoneGap) {
+        .controller('MainCTRL', function($scope, $location, $window) {
             $scope.headerName = "AppDynamics";
             $scope.alertToastText = "";
 
@@ -29,7 +28,7 @@ angular.module('AppD')
                 $('#navigation-menu').toggle("slide");
                 $location.path(path);
             };
-            PhoneGap.ready().then(function() {
-                console.log("PhoneGap ready");
-            });
+//            PhoneGap.ready().then(function() {
+//                console.log("PhoneGap ready");
+//            });
         });
