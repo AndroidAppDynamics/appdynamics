@@ -13,8 +13,8 @@ angular.module('AppD', [
         .config(function($routeProvider) {
             $routeProvider
                     .when('/', {
-                        templateUrl: 'partials/welcome.html',
-                        controller: 'WelcomeController'})
+                        templateUrl: 'partials/applicationPage.html',
+                        controller: 'ApplicationController'})
                     .when('/profile', {
                         templateUrl: 'partials/profileScreen.html',
                         controller: 'ProfileController'})
