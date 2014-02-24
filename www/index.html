@@ -24,14 +24,17 @@
 
         <!-- Slide Panel -->
         <div class="navigation-menu" id="navigation-menu">
-            <button ng-click="toggleMenu('/')" class="menu-button btn btn-default"><span class="glyphicon glyphicon-hand-up"></span> Home</button>
+            
+            <button ng-click="toggleMenu('/')" class="menu-button btn btn-default">Home</button>
             <br><br>
-            <button ng-click="toggleMenu('/profile')" class="menu-button btn btn-success"><span class="glyphicon glyphicon glyphicon-globe"></span> Profile</button>
+            <button ng-click="toggleMenu('/profile')" class="menu-button btn btn-success">Profile</button>
             <br><br>
-            <button ng-click="toggleMenu('/details')" class="menu-button btn btn-primary"><span class="glyphicon glyphicon-phone-alt"></span> Details</button>
-            <br><br>
-            <button ng-click="toggleMenu('/login')" class="menu-button btn btn-primary"><span class="glyphicon glyphicon-phone-alt"></span> Login</button>
+            Apps
             <br>
+            <div ng-repeat="appName in applications">
+            <button ng-click="toggleMenu('/details')" class="menu-button btn btn-primary">{{appName.name}}</button>
+            <br><br>
+            </div>
         </div>
         <div ng-view=""></div>
 
